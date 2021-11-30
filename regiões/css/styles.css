@@ -1,0 +1,188 @@
+:root {
+    --primary: #71b100;
+    --secondary: #e08709;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+.bg-success {
+    background-color: var(--primary) !important;
+}
+
+@media (min-width: 768px) {
+    .top-bar.bg-success {
+        background-color: transparent !important;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header .top-bar {
+        position: absolute;
+        z-index: 100;
+    }
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.navbar-brand span {
+    font-weight: 900;
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #ffffff !important;
+    font-size: .8rem;
+}
+
+/* ! Dropdown */
+.dropdown-menu {
+    background-color: var(--primary);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: var(--secondary);
+}
+
+/* ! Info-Block in slider */
+.carousel-caption h3 {
+    font-size: 2.4rem;
+}
+
+.info-block h4 {
+    font-size: 1.2rem;
+}
+
+.info-block .price {
+    font-size: 1.4rem;
+}
+
+.btn-warning {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* ! About Us */
+.about-us h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .about-us h3 {
+        font-size: 1rem;   
+    }    
+}
+
+/* ! Properties */
+.properties .card {
+    margin-bottom: 2rem;
+}
+
+.properties .card-price {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.properties .card-description img {
+    margin-right: .5rem;
+}
+
+/* ! Find your house */
+.find-your-house {
+    background-image: url(..regiões/img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.find-your-house .row {
+    height: 25rem;
+}
+
+.find-your-house h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+/* ! Blog */
+.entry h3::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: .2rem;
+    background-color: var(--primary);
+    margin-top: .5rem;
+}
+
+.entry .meta span {
+    color: var(--secondary);
+}
+
+.btn-success {
+    background-color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-success:hover {
+    background-color: #609602;
+}
+
+/* ! Testimonials */
+.testimonials {
+    background-color: var(--primary);
+}
+
+.testimonials .carousel-item {
+    padding-left: 2rem;
+}
+
+.testimonials .testimonial-text {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+}
+
+.testimonials .testimonial-text::before {
+    content: open-quote;
+    font-size: 4rem;
+    position: absolute;
+    left: -2rem;
+    top: 1rem;
+    font-weight: 900;
+}
+
+.testimonials span {
+    font-style: 1.4rem;
+    font-weight: 900;
+}
+
+/* ! Footer */
+.footer.bg-dark {
+    background-color: #333333 !important;
+}
+
+.footer .nav-link {
+    color: white;
+    text-transform: uppercase;
+}
